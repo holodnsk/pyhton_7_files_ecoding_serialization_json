@@ -15,7 +15,7 @@ def from_template(brand, model, fuel, price, template):
     template.save(brand + '_' + str(datetime.datetime.now().date()) + '_report.docx')
 
 
-def generate_report(brand, model, fuel, price):
+def generate_docx_report(brand, model, fuel, price):
     template = 'report.docx'
     document = from_template(brand, model, fuel, price, template)
 

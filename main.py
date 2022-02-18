@@ -3,10 +3,10 @@
 #2 Создайте шаблон документа doc
 #3 Внесите данные из файла в шаблон
 
-from docxCreator import generate_report
+from docxCreator import generate_docx_report
 
 # brand model fuel price
-generate_report('Toyota', 'Corolla', 7, 1500000)
+generate_docx_report('Toyota', 'Corolla', 7, 1500000)
 
 #Lite
 #2 Создайте csv-файл с данными о машине.
