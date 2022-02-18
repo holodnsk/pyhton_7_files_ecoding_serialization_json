@@ -21,5 +21,16 @@ with open('cars.csv','w',newline='') as f:
     writer.writerows(car_data)
 
 car_json = {'brand':'Toyota','model':'Corolla','fuel':7,'price':1500000}
+startTime = time.time_ns()
+with open('car.json','w') as f:
+    json.dump(car_json,f)
+
+# Pro
+# 1. Выполните задание уровня light
+# 2. Замерьте время генерации отчета (время выполнения пункта 3).
+# 3. В каждый файл из задания Light добавьте параметр: время, затраченное на генерацию отчета.
+
+finishTime = time.time_ns()
+car_json.update({'time ns':finishTime})
 with open('car.json','w') as f:
     json.dump(car_json,f)
